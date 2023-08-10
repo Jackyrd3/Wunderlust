@@ -1,0 +1,475 @@
+/*Jacqueline Diaz*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Reset end*/
+
+
+
+/*UNIVERSAL*/
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+/*universal*/
+:root{
+    font-size:16px;
+    --yellow:  #F6D64A;
+    --teal:#55BCD5;
+    --purple:#9B26B0;
+    --Blue:#499BD2;
+    --Dark-gray:#222222;
+    --light-gray:#EAEAEA;
+    --white:#FFFFFF;
+    --black:#000000;
+}
+#menu-toggle .sr-only{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skip{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+
+}
+header{
+  background:linear-gradient(180deg, #55BCD5,#FFFFFF) ;
+  
+
+}
+/*UNIVERSAL end */
+@media screen and (min-width:320px){
+    /*PLAN TRIP*/
+
+    #plan{
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        background-color: var(--yellow);
+        width:328px;
+        padding:20px;
+    }
+    #plan div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #plan section{
+        background-color: var(--teal);
+        border: 5px solid var(--white);
+        border-radius: 5px;
+        margin-bottom: 5px;
+        width:350px;
+        height:300px;
+    }
+    
+    /*plan your trip end*/
+    
+    /*testimonial section*/
+    
+    #testimonials h3{
+        display:flex;
+        justify-content: center;
+        font-family: 'Molle', cursive;
+        font-size: 2rem;
+        padding-top:30px;
+    }
+    #testimonials div{
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    #testimonials h4{
+        font-size:2rem;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    #testimonials q{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*testimonial section end*/
+
+    /*ABOUT*/
+
+    #about h3{
+        display:flex;
+        justify-content: center;
+        font-family: 'Molle', cursive;
+        font-size: 2rem;
+    }
+    #about{
+        background-color: var(--Blue);
+        padding:30px;
+    
+    }
+    #about div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:10px;
+    }
+    #about section{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about section img{
+        width:80px;
+        height:100px;
+    }
+    
+    #about h4 {
+        font-weight: bold;
+    
+    }
+
+
+    /*ABOUT END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px){
+  h1{
+    padding-top:20px;
+   font-family: 'Molle', cursive;
+    font-size:3rem;
+    display:flex;
+    justify-content:center;
+    line-height: 5rem;
+  }
+  header p{
+    font-family:'Montserrat', sans-
+     serif;
+    text-align:center;
+    
+  }
+  
+  #menu li{
+    display:flex;
+    display:inline-block;
+    border-radius:5px;
+    margin:5px;
+    font-family: 'Montserrat', sans-serif; 
+    
+  }
+  #menu li a{
+    text-decoration:none;
+    color:var(--black);
+    font-weight:bold;
+    text-transform:uppercase
+  }
+  nav{
+    padding-top:50px;
+    display:flex;
+    justify-content:center;
+  
+  }
+  
+ #menu li a{
+    background-color:white;
+    padding: 10px 30px 10px 30px;
+   
+  }
+  #menu a:hover{
+   background-color:var(--yellow);
+   padding: 15px 20px 15px 20px;
+  }
+  #menu-toggle input, span{
+    display:none;
+  }
+  
+  #img-grid{
+    width:fit-content;
+    
+  }
+  /*THINGS TO DO PX*/
+
+  #plan div{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:2px;
+}
+  #plan section{
+    text-align: center;
+    width:350px;
+    height:280px;
+    padding:30px;
+    background-color: var(--teal);
+    margin-bottom:10px;
+    border:5px solid var(--white) ;
+    border-radius: 15px;
+}
+
+#plan{
+    background-color: var(--yellow);
+    width:fit-content;
+}
+
+  /*TESTIMONIALS PX*/
+  #testimonials div{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap:2px;
+  }
+
+  /*ABOUT PX*/
+  #about div{
+    display:flex;
+    justify-content:space-evenly;
+    
+  }
+  /*CONTACT PX*/
+  }
+
+input[type=text]{
+    width:400px;
+    height:50px;
+    border: solid var(--purple);
+}
+input[type=radio]{
+    width:40%
+}
+
+input[type=email]{
+     width:400px;
+    height:50px;
+    border: solid var(--purple);
+
+}
+
+input[type=tel]{
+    width:400px;
+    height:50px;
+    border: solid var(--purple);
+
+}
+
+input[type=submit]{
+  padding:10px 90px 10px 90px;
+  background-color:var(--purple);
+  color:var(--white);
+}
+
+#selects{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+ #destination{
+    width:400px;
+    height:50px;
+    border: solid var(--purple)
+}
+#travelTime{
+    width:400px;
+    height:50px;
+    border: solid var(--purple)
+
+}
+
+
+@media screen and (min-width:1000px){
+
+
+
+#main-content div{
+    display:grid;
+    grid-template-columns: 400px 1fr ;
+
+}
+
+#plan div{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap:2px;
+  }
+
+
+#testimonials div{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap:2px;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/*ALL CHANNELS*/
+#main-content h2{
+  font-family:'Molle', cursive;
+  font-size:2rem;
+}
+
+#main-content p{
+  font-family: 'Montserrat', sans-serif;
+  line-height:2rem;
+}
+
+/*PlAN TRIP SECTION*/
+#plan{
+    background-color: var(--yellow);
+}
+
+#plan h3{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-family: 'Molle', cursive;
+    font-size:2rem;
+}
+
+#plan h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2rem;
+    font-weight:bold;
+    margin:5px;
+    padding-bottom:10px;
+    text-transform: uppercase;
+}
+
+/*TESTIMONIALS*/
+#testimonials section{
+  text-align:center;
+  
+}
+
+/*ABOUT*/
+#about section{
+  text-align:center;
+}
+#about{
+    background-color: var(--Blue);
+    padding:30px;
+}
+
+#about section img{
+    width:80px;
+    height:100px;
+}
+
+/*CONTACT*/
+
+#names{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nums{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact h3::first-line{
+   font-family: 'Molle', cursive;
+
+}
+#menu li a{
+    color:var(--black);
+    display:flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+#contact h3{
+    font-size:2rem;
+    display:flex;
+    justify-content: center;
+    font-family: 'Molle', cursive;
+}
+
+.form-required{
+    font-family:'Montserrat', sans-serif ;
+}
