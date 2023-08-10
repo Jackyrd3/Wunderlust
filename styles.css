@@ -331,6 +331,30 @@ input[type=submit]{
 
 
 @media screen and (min-width:1000px){
+
+  header img{
+    padding-top:30px;
+  }
+
+header p{
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 235px;
+}
+  header img, h1 {
+  display:inline-block;
+  align-items: flex-end;
+  }
+
+  /*menu*/
+
+nav{
+  display:flex;
+  justify-content: flex-end;
+}
+#menu-toggle{
+
+}
 #main-content{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -359,6 +383,7 @@ grid-column: 1/-1;
 
 #img-grid{
   grid-column: 2/2;
+  margin-left:-10%;
 }
 #intro p{
   width:650px;
