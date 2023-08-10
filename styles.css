@@ -86,19 +86,18 @@ overflow:hidden;
 }
 header{
   background:linear-gradient(180deg, #55BCD5,#FFFFFF) ;
-  
 
 }
-/*UNIVERSAL end */
+
 @media screen and (min-width:320px){
-    /*PLAN TRIP*/
+
+
 
     #plan{
         display:flex;
         flex-direction:column;
         text-align: center;
         background-color: var(--yellow);
-        width:328px;
         padding:20px;
     }
     #plan div{
@@ -183,20 +182,6 @@ header{
     /*ABOUT END*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 }
 
 
@@ -349,10 +334,9 @@ input[type=submit]{
 
 
 
-#main-content div{
+#main-content{
     display:grid;
-    grid-template-columns: 400px 1fr ;
-
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #plan div{
